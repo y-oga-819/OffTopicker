@@ -1,0 +1,17 @@
+version: "3"
+
+services:
+  swagger-editor:
+    image: swaggerapi/swagger-editor
+    container_name: dev-swagger-editor
+    ports:
+      - 8090:8080
+    volumes:
+      - ./dist/specification.yml:/specification.yml
+  nginx:
+    image: nginx:alpine
+    container_name: dev-swagger-ui
+    ports:
+      - 8091:80
+    volumes:
+      - ./dist:/usr/share/nginx/html
