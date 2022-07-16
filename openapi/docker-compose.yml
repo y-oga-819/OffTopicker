@@ -15,4 +15,3 @@ services:
       - 8091:80
     volumes:
       - ./html:/usr/share/nginx/html
-      - ./html:/usr/share/nginx/html
