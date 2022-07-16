@@ -2,3 +2,9 @@
 
 # OffTopicker
 The application pick important topics in meeting and create word cloud sorted by chronological order.
+
+## Documents
+https://y-oga-819.github.io/OffTopicker/
+
+## API Documents
+https://y-oga-819.github.io/OffTopicker/html/index.html
