@@ -7,11 +7,12 @@ services:
     ports:
       - 8090:8080
     volumes:
-      - ./html/docs/index.yml:/specification.yml
+      - ./html/specification.yml:/specification.yml
   nginx:
     image: nginx:alpine
     container_name: dev-swagger-ui
     ports:
       - 8091:80
     volumes:
+      - ./html:/usr/share/nginx/html
       - ./html:/usr/share/nginx/html
